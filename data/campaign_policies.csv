@@ -1,0 +1,16 @@
+look_day,band,arm,mass,certified_policy
+4,planned,I1-E,,0
+4,planned,q35-4b-ih-w8a8|b8|c32|f1prio,,0
+4,planned,q35-4b-ih-w8a8|b8|c32|fifo,,0
+4,tbar8,I1-E,,0
+4,tbar8,q35-4b-ih-w8a8|b8|c32|f1prio,,0
+4,tbar8,q35-4b-ih-w8a8|b8|c32|fifo,,0
+7,planned,I1-E,0.1060036438,1
+7,planned,q35-4b-ih-w8a8|b8|c32|f1prio,0.547767843,1
+7,planned,q35-4b-ih-w8a8|b8|c32|fifo,0.3462285132,1
+7,tbar8,I1-E,,0
+7,tbar8,q35-4b-ih-w8a8|b8|c32|f1prio,,0
+7,tbar8,q35-4b-ih-w8a8|b8|c32|fifo,,0
+7,measured,I1-E,0.1160625368,1
+7,measured,q35-4b-ih-w8a8|b8|c32|f1prio,0.4547141462,1
+7,measured,q35-4b-ih-w8a8|b8|c32|fifo,0.429223317,1

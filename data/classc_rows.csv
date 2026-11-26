@@ -1,0 +1,7 @@
+row,meaning,arm,center,radius,upper,upper_cert,eta_dep,level_L
+Y_D_C,class C deadline misses,I1-E,0.0075921247,0.022403782,0.029995907,0.037926453,0.0079305463,6.2915691
+Y_D_C,class C deadline misses,q35-4b-ih-w8a8|b8|c32|f1prio,0.07683176,0.026342767,0.10317453,0.11110507,0.0079305463,6.2915691
+Y_D_C,class C deadline misses,q35-4b-ih-w8a8|b8|c32|fifo,0.079748219,0.027735465,0.10748368,0.11541423,0.0079305463,6.2915691
+Y_D_C1,class C device control (5 s) deadline misses,I1-E,0.014745933,0.022955442,0.037701375,0.045631921,0.0079305463,6.2915691
+Y_D_C1,class C device control (5 s) deadline misses,q35-4b-ih-w8a8|b8|c32|f1prio,0.1537767,0.034377254,0.18815395,0.1960845,0.0079305463,6.2915691
+Y_D_C1,class C device control (5 s) deadline misses,q35-4b-ih-w8a8|b8|c32|fifo,0.16055021,0.037677943,0.19822815,0.2061587,0.0079305463,6.2915691

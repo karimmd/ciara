@@ -1,0 +1,28 @@
+{
+ "S": [
+  "I1-E",
+  "q35-4b-ih-w8a8|b8|c32|f1prio",
+  "q35-4b-ih-w8a8|b8|c32|fifo"
+ ],
+ "a0": "I1-E",
+ "balanced": true,
+ "block_epochs": 50,
+ "burn_in_epochs": 25,
+ "composition": [
+  "I1-E",
+  "I1-E",
+  "q35-4b-ih-w8a8|b8|c32|f1prio",
+  "q35-4b-ih-w8a8|b8|c32|fifo"
+ ],
+ "l_dep_epochs": 1200,
+ "level_L": 6.173786103901937,
+ "looks_days": [
+  4,
+  7,
+  10
+ ],
+ "n_blocks": 576,
+ "one_sided": true,
+ "schedule_seed": 20262606,
+ "seed": 20262605
+}

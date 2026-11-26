@@ -1,0 +1,2 @@
+inversions,pairs,share,ci95_lo,ci95_hi,reps,edge_set,mock
+6,15,0.4,0.3333333333,0.5333333333,1000,int8-int4,0

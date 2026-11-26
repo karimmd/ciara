@@ -1,0 +1,19 @@
+id,label,sub_item,unit,n,mean,median,p95,p99,max,source
+switch_pause_s,"Switch pause, sleep path",0,s,829,3.1013055226,2.7503973581,4.3704897657,5.1483934674,11.4800326303,blocks.jsonl activate.paused_s
+switch_drain_s,of which drain of requests in flight,1,s,829,0.2925361099,0.0019386765,1.5898379017,3.1161050925,9.6342813019,blocks.jsonl activate.components.drain_s
+switch_wake_s,of which wake of the incoming engine,1,s,829,1.5359413428,1.4391522557,2.3879435316,2.5790240686,2.6469947267,blocks.jsonl activate.components.wake_s
+switch_probe_s,of which first probe request,1,s,829,0.0783430578,0.0742105953,0.1008025318,0.1683831695,0.213151956,blocks.jsonl activate.components.probe_s
+switch_resume_s,of which resume of admission,1,s,829,0.0016968118,0.0016421694,0.0025341034,0.0027724136,0.016168328,blocks.jsonl activate.components.resume_s
+switch_restart_s,"Switch pause, restart path",0,s,0,,,,,,blocks.jsonl activate.paused_s
+gw_compose_ms,Gateway composition,0,ms,1041429,0.138779331,0.122637,0.2813296,0.46141808,38.566671,edge-gw-*.jsonl t_compose_ms
+gw_verify_ms,Gateway verification,0,ms,1041429,0.2992009454,0.275636,0.5185172,1.192203,545.76372,edge-gw-*.jsonl t_verify_ms
+gw_route_ms,"Gateway routing and admission, idle node",0,ms,397461,128.0583883958,0.246463,8.199515,2090.7275724,260778.903477,edge-gw-*.jsonl queue_wait_ms - t_compose_ms - t_verify_ms
+cloud_gw_admit_ms,"Cloud gateway, arrival to admission, idle",0,ms,180021,0.2073820361,0.194307,0.277744,1.00156,1.689866,cloud-gw.jsonl t_admit - t_arrive
+cascade_attempt_done_ms,"Cascade edge attempt, finished at the edge",0,ms,122587,1528.3183381232,812.197776,4846.4146587,6724.47341166,11728.269531,edge-gw-*.jsonl edge_attempt_ms
+cascade_attempt_escalated_ms,"Cascade edge attempt, escalated to the cloud",0,ms,124798,3140.8905513865,2348.627396,8387.33744945,10770.1127595,38052.321186,edge-gw-*.jsonl edge_attempt_ms
+controller_decide_ms,Controller decision at a block start,0,ms,40414,4.0652588808,3.759754,7.35573635,10.06117151,19.272846,epochs.jsonl decide_ms
+controller_poll_ms,Controller telemetry poll per node and epoch,0,ms,80828,431.8184803744,428.5008295,523.7115651,576.08119845,873.059973,epochs.jsonl poll_ms
+controller_late_ms,Controller lateness at the epoch boundary,0,ms,80828,1.6680284557,1.126535,2.06390655,2.63653631,10076.225804,epochs.jsonl late_ms
+activation_rtt_s,Activation call seen by the controller,0,s,900,3.2081539818,2.9447360905,4.5695881208,5.2663365924,11.596673587,epochs.jsonl activate_rtt_s
+look_analysis_s,Look analysis (pipeline and decision),0,s,1,,660.0431129932,,,660.0431129932,monitor.json timing_s.pipeline_and_look
+solve_ms,"Certified program, one solve",0,ms,20,1.4544704929,1.337508671,2.3635983467,2.4043735862,2.414567396,look file solved again

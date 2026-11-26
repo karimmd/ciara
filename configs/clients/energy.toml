@@ -1,0 +1,58 @@
+[radio.nbiot]
+mode = "state"
+label = "NB-IoT module: u-blox EVK-N211 (low) and EVK-R410M in NB-IoT mode (high)"
+p_tx_mw   = { low = 742.858,  nominal = 1082.1245, high = 1421.391 }
+p_rx_mw   = { low = 174.427,  nominal = 198.2805,  high = 222.134 }
+beta_mw   = { low = 21.337,   nominal = 27.9065,   high = 34.476 }
+tail_s    = { low = 0.0,      nominal = 0.0,       high = 0.0 }
+p_tail_mw = { low = 21.337,   nominal = 27.9065,   high = 34.476 }
+
+[radio.ltem]
+mode = "state"
+label = "LTE-M module: u-blox EVK-R410M in LTE-M mode; high end from the BG96 TX peak"
+p_tx_mw   = { low = 1322.157, nominal = 1322.157,  high = 1750.0 }
+p_rx_mw   = { low = 335.607,  nominal = 335.607,   high = 335.607 }
+beta_mw   = { low = 34.458,   nominal = 34.458,    high = 34.458 }
+tail_s    = { low = 0.0,      nominal = 0.0,       high = 0.0 }
+p_tail_mw = { low = 34.458,   nominal = 34.458,    high = 34.458 }
+
+[radio.nr]
+mode = "linear"
+label = "5G NSA smartphone-class modem, low-band slopes (Verizon, Galaxy S20U)"
+a_up_mw_per_mbps = { low = 9.42,  nominal = 29.15, high = 80.21 }
+a_dn_mw_per_mbps = { low = 1.81,  nominal = 13.52, high = 14.55 }
+beta_mw   = { low = 249.0,    nominal = 254.5,     high = 1092.0 }
+tail_s    = { low = 10.0,     nominal = 10.0,      high = 20.0 }
+p_tail_mw = { low = 249.0,    nominal = 254.5,     high = 1092.0 }
+
+[radio.lte]
+mode = "linear"
+label = "LTE smartphone (Huang et al.); not used by the default classes, kept for sensitivity runs"
+a_up_mw_per_mbps = { low = 438.39, nominal = 438.39, high = 438.39 }
+a_dn_mw_per_mbps = { low = 51.97,  nominal = 51.97,  high = 51.97 }
+beta_mw   = { low = 1288.04,  nominal = 1288.04,   high = 1288.04 }
+tail_s    = { low = 11.5760,  nominal = 11.5760,   high = 11.5760 }
+p_tail_mw = { low = 1060.0,   nominal = 1060.0,    high = 1060.0 }
+
+[device.A]
+label = "STM32L476, Cortex-M4 at 80 MHz, 3.3 V"
+p_cpu_mw      = { low = 10.3, nominal = 26.4, high = 26.4 }
+p_dev_idle_mw = { low = 0.0,  nominal = 3.3,  high = 10.0 }
+
+[device.B]
+label = "ESP32 dual core at 240 MHz, 3.3 V"
+p_cpu_mw      = { low = 99.0, nominal = 161.7, high = 224.4 }
+p_dev_idle_mw = { low = 2.64, nominal = 2.64,  high = 2.64 }
+
+[device.C]
+label = "Raspberry Pi 4 Model B"
+p_cpu_mw      = { low = 2700.0, nominal = 3625.0, high = 6400.0 }
+p_dev_idle_mw = { low = 2700.0, nominal = 2700.0, high = 2700.0 }
+
+[wire]
+overhead_factor = 1.0456
+
+[budget]
+A = 8.0
+B = 6.0
+C = 1.0

@@ -1,0 +1,7 @@
+composition,dependence,R,miss_one_sided,miss_two_sided
+1-1-1-1,common,8000,2,0
+1-1-1-1,half,8000,23,14
+1-1-1-1,indep,8000,30,22
+2-1-1,common,8000,1,1
+2-1-1,half,8000,19,12
+2-1-1,indep,8000,28,19

@@ -1,0 +1,3 @@
+scope,factor_min,budget_Y_E_A,budget_Y_E_B,budget_Y_E_C,binding_at_threshold,quality_cost_bound_at_threshold,w_incumbent_at_threshold,lp_status_just_below
+all,0.9259179956,0.4629589978,0.4629589978,0.4629589978,Y_L_f1;Y_E_C;Y_C,0.08420322595,0.1060036465,infeasible
+A,0.5869576629,0.2934788314,0.5,0.5,Y_L_f1;Y_E_A;Y_C,0.08420322612,0.1060036438,infeasible

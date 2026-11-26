@@ -1,0 +1,12 @@
+key,value
+rounds,403
+n_switch_blocks,1027
+n_profile_switch,812
+identified,1
+identified_fraction,0.994
+settle_threshold_se,4.08
+settled_epoch_max_over_groups,"{""cloud_queue"": 0, ""cloud_share"": 0, ""deadline_miss"": 1, ""mean_latency_s"": 0, ""tail_f1"": 0, ""tail_f2"": 18}"
+settled_epoch_pooled,"{""cloud_queue"": 0, ""cloud_share"": 0, ""deadline_miss"": 1, ""mean_latency_s"": 0, ""tail_f1"": 0, ""tail_f2"": 0}"
+selected_series,"[""tail_f2"", ""deadline_miss""]"
+band_planned,"{""t_bar_5"": 0.001476819081661901, ""t_bar_8"": 0.014299701169127717}"
+decision_needed,1

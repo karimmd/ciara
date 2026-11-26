@@ -1,0 +1,17 @@
+class,arm,quantity,value
+A,I1-E,campaign (constant),0.245681406
+A,I1-E,E4 with the campaign link mix (constant),0.2518683677
+A,I1-E,E4 with its own link mix (constant),0.269174746
+A,I1-E,E4 measured,0.3128086062
+A,I1-E,gap,0.0671272002
+A,I1-E,timing,0.0061869617
+A,I1-E,link_draw,0.0173063783
+A,I1-E,wire_overhead,0.0436338602
+B,I1-E,campaign (constant),0.2793346794
+B,I1-E,E4 with the campaign link mix (constant),0.2831886151
+B,I1-E,E4 with its own link mix (constant),0.3170644277
+B,I1-E,E4 measured,0.4067995024
+B,I1-E,gap,0.127464823
+B,I1-E,timing,0.0038539357
+B,I1-E,link_draw,0.0338758126
+B,I1-E,wire_overhead,0.0897350747

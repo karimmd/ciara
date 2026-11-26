@@ -1,0 +1,6 @@
+variant,source,worst_level_over_budget
+CIARA,comparison run,0.965218
+Plug-in program,"offline, reference levels",1.03781
+FIFO only,"offline, reference levels (incumbent kept)",1.58326
+Inc.+cascade,comparison run,1.0893
+Inc.+priority,comparison run,1.69593

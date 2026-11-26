@@ -1,0 +1,4 @@
+member,weight,node_blocks,mock
+CIARA|I1-E,0.1060036438,2,0
+q35-4b-ih-w8a8|b8|c32|f1prio,0.547767843,25,0
+q35-4b-ih-w8a8|b8|c32|fifo,0.3462285132,15,0

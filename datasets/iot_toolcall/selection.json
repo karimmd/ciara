@@ -1,0 +1,163 @@
+{
+ "suite": "iot_toolcall (family 1, device control by tool calls)",
+ "source": "https://huggingface.co/datasets/acon96/Home-Assistant-Requests-V2",
+ "revision": "29ac1a80b7185e7b4c2c9e43b7e4fe71531ec434",
+ "license_of_source": "MIT (Hugging Face dataset card metadata of Home-Assistant-Requests V2 and of V1)",
+ "upstream_file": {
+  "name": "home_assistant_test_english.jsonl",
+  "sha256": "71a5488a9d66e2f6de6693d85882853e4674ac13313173063f32b681106fb4ab",
+  "bytes": 38570015
+ },
+ "build_script": "build/freeze_iot.py (uses build/iot_gen.py)",
+ "seeds": {
+  "real": 20261014,
+  "synthetic_test": 20261015,
+  "synthetic_heldout": 20261016
+ },
+ "quotas": {
+  "real": {
+   "test": {
+    "real_onoff": 60,
+    "real_todo": 15,
+    "real_climate": 15,
+    "real_humidifier": 8,
+    "real_vacuum": 8,
+    "real_timer": 8,
+    "real_state_nocall": 36
+   },
+   "heldout": {
+    "real_onoff": 45,
+    "real_todo": 12,
+    "real_climate": 12,
+    "real_humidifier": 6,
+    "real_vacuum": 6,
+    "real_timer": 6,
+    "real_state_nocall": 27
+   }
+  },
+  "synthetic": {
+   "test": {
+    "syn_onoff": 30,
+    "syn_lockcover": 25,
+    "syn_brightness": 25,
+    "syn_color": 20,
+    "syn_color_brightness": 10,
+    "syn_position": 15,
+    "syn_volume": 12,
+    "syn_media": 12,
+    "syn_vacuum": 6,
+    "syn_todo": 8,
+    "syn_timer": 8,
+    "syn_climate": 10,
+    "syn_multi": 35,
+    "nocall_ood": 20,
+    "nocall_unsupported": 12,
+    "nocall_state": 12
+   },
+   "heldout": {
+    "syn_onoff": 22,
+    "syn_lockcover": 19,
+    "syn_brightness": 19,
+    "syn_color": 15,
+    "syn_color_brightness": 8,
+    "syn_position": 11,
+    "syn_volume": 9,
+    "syn_media": 9,
+    "syn_vacuum": 5,
+    "syn_todo": 6,
+    "syn_timer": 6,
+    "syn_climate": 8,
+    "syn_multi": 26,
+    "nocall_ood": 15,
+    "nocall_unsupported": 9,
+    "nocall_state": 9
+   }
+  }
+ },
+ "counts": {
+  "test": 410,
+  "heldout": 309
+ },
+ "by_source": {
+  "test": {
+   "synthetic": 260,
+   "ha_v2_real": 150
+  },
+  "heldout": {
+   "ha_v2_real": 113,
+   "synthetic": 196
+  }
+ },
+ "by_category": {
+  "test": {
+   "nocall_ood": 20,
+   "nocall_state": 12,
+   "nocall_unsupported": 12,
+   "real_climate": 15,
+   "real_humidifier": 8,
+   "real_onoff": 60,
+   "real_state_nocall": 36,
+   "real_timer": 8,
+   "real_todo": 15,
+   "real_vacuum": 8,
+   "syn_brightness": 25,
+   "syn_climate": 10,
+   "syn_color": 20,
+   "syn_color_brightness": 10,
+   "syn_lockcover": 25,
+   "syn_media": 12,
+   "syn_multi": 35,
+   "syn_onoff": 30,
+   "syn_position": 15,
+   "syn_timer": 8,
+   "syn_todo": 8,
+   "syn_vacuum": 6,
+   "syn_volume": 12
+  },
+  "heldout": {
+   "nocall_ood": 15,
+   "nocall_state": 9,
+   "nocall_unsupported": 9,
+   "real_climate": 12,
+   "real_humidifier": 6,
+   "real_onoff": 45,
+   "real_state_nocall": 27,
+   "real_timer": 5,
+   "real_todo": 12,
+   "real_vacuum": 6,
+   "syn_brightness": 19,
+   "syn_climate": 8,
+   "syn_color": 15,
+   "syn_color_brightness": 8,
+   "syn_lockcover": 19,
+   "syn_media": 9,
+   "syn_multi": 26,
+   "syn_onoff": 22,
+   "syn_position": 11,
+   "syn_timer": 6,
+   "syn_todo": 6,
+   "syn_vacuum": 5,
+   "syn_volume": 9
+  }
+ },
+ "no_call_share": {
+  "test": 0.195,
+  "heldout": 0.194
+ },
+ "real_pool_sizes_after_verification": {
+  "real_onoff": 152,
+  "real_vacuum": 23,
+  "real_climate": 144,
+  "real_humidifier": 72,
+  "real_todo": 112,
+  "real_timer": 15,
+  "real_state_nocall": 316
+ },
+ "expected_sha256_of_built_files": {
+  "tools.json": "d5c4ba0ccb399048a92e1cd7539ac8e6692563f6ebc4bbb24d7dcc322a867ba7",
+  "catalog.json": "6f56066b270bfaaeb356716e305b6483975a8fa5cdca8bae3e3341e97d88d846",
+  "test.jsonl": "f7fb7bd9bc73b4de74809af36bd62f6a6acb7fd8852f187278ab4986c217a447",
+  "heldout.jsonl": "ce6d893348e8f250c63514047be6f4393d1053e59a6bf2be2dd267562a98f41f"
+ },
+ "identifiers": "selection_rows.csv: id, split, source (ha_v2_real or synthetic), category, source_row (zero-based line of the upstream file, empty for synthetic items)"
+}

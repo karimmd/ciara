@@ -1,0 +1,6 @@
+look_day,band,complete_rounds,branch,lp_status,switch,quality_cost_bound,gate_value,nonincumbent_mass,incumbent_feasible,eta_dep,t_bar,written,reason
+4,planned,230,budget_compliance,infeasible,0,,,,0,0.0079305463,5.0,2026-10-30T02:49:45+08:00,"the incumbent exceeds a budget at its upper bound and the LP is infeasible: no certified policy exists, the incumbent is kept"
+4,tbar8,230,budget_compliance,infeasible,0,,,,,0.010425345,8.0,,"the incumbent exceeds a budget at its upper bound and the LP is infeasible: no certified policy exists, the incumbent is kept"
+7,planned,403,budget_compliance,optimal,1,0.0842032261,-0.0842032261,0.8939963562,0,0.0079305463,5.0,2026-11-02T03:01:23+08:00,certified budget-compliant policy deployed: the incumbent exceeds Y_C at its upper bound; the gate does not apply
+7,tbar8,403,budget_compliance,infeasible,0,,,,,0.010425345,8.0,,"the incumbent exceeds a budget at its upper bound and the LP is infeasible: no certified policy exists, the incumbent is kept"
+7,measured,403,budget_compliance,optimal,1,0.0796042729,-0.0796042729,0.8839374632,,0.0079305463,5.0,,certified budget-compliant policy deployed: the incumbent exceeds Y_C at its upper bound; the gate does not apply

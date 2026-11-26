@@ -1,0 +1,47 @@
+run_id: certification-example
+seed: 20261201
+epoch_s: 30
+block_epochs: 50
+burn_in_epochs: 25
+n_blocks: 403
+
+design:
+  label: balanced
+  composition: [I1-E, "a1-f1prio", "a2-fifo", I1-E]
+
+arms:
+  - id: I1-E
+    kind: incumbent
+    router: kappa
+    profiles: [q35-4b-fp16, q35-4b-ih-w8a8, q35-4b-ih-w4a16, q35-2b-fp16, q35-0.8b-fp16]
+    incumbent: {factory: "ciara_baselines.factory:make_incumbent", kwargs: {name: I1-E}}
+  - id: a1-f1prio
+    profile: q35-4b-ih-w8a8
+    batch_cap: 8
+    escalate_family2: true
+    router: kappaC
+    router_params: {budget: 32}
+    admission: f1prio
+  - id: a2-fifo
+    profile: q35-4b-ih-w8a8
+    batch_cap: 8
+    escalate_family2: true
+    router: kappaC
+    router_params: {budget: 32}
+    admission: fifo
+
+nodes:
+  - {id: E1, gateway: "${EDGE_GW_1}"}
+  - {id: E2, gateway: "${EDGE_GW_2}"}
+  - {id: E3, gateway: "${EDGE_GW_3}"}
+  - {id: E4, gateway: "${EDGE_GW_4}"}
+
+cloud:
+  gateway: "${CLOUD_GW}"
+  engine: "${CLOUD_ENGINE}"
+
+context:
+  default: pooled
+
+control:
+  start_delay_s: 30

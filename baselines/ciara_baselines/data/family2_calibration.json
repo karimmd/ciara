@@ -1,0 +1,22 @@
+{
+  "description": "Family 2 (sensor interpretation) profile inputs from the family 2 calibration table. Calibration split (200 items, generator sensor-gen-1), non-thinking, temperature 0, 1,024-token output cap. Accuracy is answer accuracy as a fraction. The test and held-out splits are not used here.",
+  "source": "Family 2 calibration table (Qwen3.5 checkpoints, calibration split, non-thinking, temperature 0)",
+  "split": "calib",
+  "n_items": 200,
+  "output_cap_tokens": 1024,
+  "prompt_tokens_mean": 1693.0,
+  "prompt_tokens_basis": "Mean of the four level means (415, 780, 1743, 3834) of the character-based estimate of the family 2 prompt length; plus or minus 10 percent; replace by measured counts after a run.",
+  "profiles": {
+    "q35-0.8b-fp16": {"answer_acc": 0.30, "mean_output_tokens": 9, "p95_output_tokens": null, "cut_off_at_cap": 0},
+    "q35-2b-fp16": {"answer_acc": 0.42, "mean_output_tokens": 12, "p95_output_tokens": null, "cut_off_at_cap": 0},
+    "q35-4b-fp16": {"answer_acc": 0.50, "mean_output_tokens": 425, "p95_output_tokens": 1024, "cut_off_at_cap": 63},
+    "q35-4b-ih-w8a8": {"answer_acc": 0.52, "mean_output_tokens": 450, "p95_output_tokens": 1024, "cut_off_at_cap": 65},
+    "q35-9b-ih-w4a16": {"answer_acc": 0.59, "mean_output_tokens": 9, "p95_output_tokens": null, "cut_off_at_cap": 0}
+  },
+  "missing": {
+    "q35-4b-ih-w4a16": "No family 2 calibration number exists for the 4B INT4 build. Its family 2 accuracy and output length are unprofiled until the calibration run covers it.",
+    "q35-2b-ih-w8a8": "Excluded from the admissible set by the accuracy screen.",
+    "q35-2b-ih-w4a16": "Excluded from the admissible set by the accuracy screen."
+  },
+  "p95_output_tokens_note": "A null p95 means the p95 output length was not recorded; the loader then uses the mean output length for the p95 latency shift. For the 4B builds more than 5 percent of replies hit the 1,024-token cap (63 and 65 of 200), so the 95th percentile output length is the cap."
+}

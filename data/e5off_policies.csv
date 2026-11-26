@@ -1,0 +1,4 @@
+policy,lp_status,realized_defined,mass_I1_E,mass_c32_prio,mass_c32_FIFO
+ciara,campaign decision,1,0.1060036438,0.547767843,0.3462285132
+ciara_without_energy,optimal,1,0.1060036438,0.547767843,0.3462285132
+plug_in_lp,optimal,1,0.2597113056,0.0,0.7402886944

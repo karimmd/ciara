@@ -1,0 +1,94 @@
+{
+ "description": "Workload parameters of the testbed clients: device classes, request mix, arrival process and request content. The values are those of the default configuration file of the client emulator.",
+ "families": {
+  "family_1": {
+   "name": "device control by tool calls",
+   "suite": "iot_toolcall",
+   "items_in_test_split": 410,
+   "max_tokens": 512
+  },
+  "family_2": {
+   "name": "sensor interpretation (the escalable family)",
+   "suite": "sensor_interp",
+   "items_in_test_split": 400,
+   "max_tokens": 1024
+  }
+ },
+ "request_content": "Each request draws one item of the test split of its family with replacement.",
+ "request_body": {
+  "stream": true,
+  "temperature": 0,
+  "seed": 0,
+  "enable_thinking": false
+ },
+ "classes": {
+  "A": {
+   "device_class": "NB-IoT sensors",
+   "radio": "nbiot",
+   "devices_per_node": 40,
+   "base_rate_hz_per_device": 0.004167,
+   "family_mix": {
+    "1": 0.1,
+    "2": 0.9
+   },
+   "deadline_s": {
+    "family_1": 60.0,
+    "family_2": 60.0
+   },
+   "request_timeout_s": 300,
+   "link_mix": {
+    "nbiot_cl0": 0.7,
+    "nbiot_cl1": 0.3
+   }
+  },
+  "B": {
+   "device_class": "LTE-M actuators",
+   "radio": "ltem",
+   "devices_per_node": 20,
+   "base_rate_hz_per_device": 0.01,
+   "family_mix": {
+    "1": 0.9,
+    "2": 0.1
+   },
+   "deadline_s": {
+    "family_1": 10.0,
+    "family_2": 60.0
+   },
+   "request_timeout_s": 120,
+   "link_mix": {
+    "ltem_good": 0.75,
+    "ltem_mid": 0.25
+   }
+  },
+  "C": {
+   "device_class": "5G cameras",
+   "radio": "nr",
+   "devices_per_node": 8,
+   "base_rate_hz_per_device": 0.02,
+   "family_mix": {
+    "1": 0.5,
+    "2": 0.5
+   },
+   "deadline_s": {
+    "family_1": 5.0,
+    "family_2": 60.0
+   },
+   "request_timeout_s": 60,
+   "link_mix": {
+    "nr_near": 0.6,
+    "nr_typical": 0.4
+   }
+  }
+ },
+ "arrivals": {
+  "process": "2-state Markov-modulated Poisson process, shared by the devices of one node and class; parameters in ../arrivals/mmpp_fit.json",
+  "rate_in_state_i": "base_rate * rel_rate[i] / sum_j pi_j rel_rate[j] (pi: stationary law of the modulating chain), so the long-run mean rate equals the base rate",
+  "per_device_rate_heterogeneity": "Gamma multiplier with mean 1 and coefficient of variation 0.5",
+  "load_scale": 1.0,
+  "control": "Poisson arrivals with the same long-run mean rate"
+ },
+ "time": {
+  "epoch_s": 30,
+  "block_epochs": 50
+ }
+}

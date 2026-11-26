@@ -1,0 +1,4 @@
+mu_tilde = 0.2667, mu_rw = 0.2393
+NAIVE (ratio of pairs)   centre mean 0.2666  radius 0.0098  covers mu_tilde 1.00  covers mu_rw 0.00
+C1P                      centre mean 0.2666  radius 0.0154  covers mu_tilde 1.00  covers mu_rw 0.00
+C1R                      centre mean 0.2393  radius 0.0096  covers mu_tilde 0.00  covers mu_rw 1.00

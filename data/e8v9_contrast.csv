@@ -1,0 +1,33 @@
+level,outcome,J_pi,J_a0,diff,se_diff,node_blocks,quality_sign_as_campaign,same_budget_status_as_campaign,mock
+hi,Y_C,0.2575160105,0.484990784,-0.2274747734,0.0112666563,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_D,0.0895581822,0.0298836663,0.0596745158,0.0105549362,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_E_A,0.304876891,0.3180899741,-0.0132130831,0.0151551602,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_E_B,0.3789338036,0.3253721235,0.0535616801,0.0121522983,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_E_C,0.5225739458,0.3912727414,0.1313012045,0.0262107054,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_L_f1,0.1312867986,0.0454071278,0.0858796708,0.0167980541,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_L_f2,0.0437005735,0.0751398368,-0.0314392633,0.0156273385,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+hi,Y_Q,0.6920787641,0.6808866856,0.0111920785,0.0077702802,68,0,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': False, 'Y_L_f1': False, 'Y_L_f2': True}",0
+lo,Y_C,0.2642234612,0.4742439606,-0.2100204994,0.0093411443,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_D,0.0210647754,0.0073764219,0.0136883534,0.0028462475,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_E_A,0.2814184566,0.2850799635,-0.0036615069,0.0109149178,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_E_B,0.3031913008,0.2774596791,0.0257316217,0.0070059022,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_E_C,0.3550966875,0.2630832187,0.0920134689,0.0159367308,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_L_f1,0.0344696153,0.0262702284,0.0081993869,0.0045175259,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_L_f2,0.025833589,0.0221372541,0.003696335,0.0031221265,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+lo,Y_Q,0.685974868,0.6979794091,-0.0120045412,0.0062251407,92,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_C,0.2788234752,0.4843665167,-0.2055430415,0.0166316206,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_D,0.0544926912,0.0277829621,0.0267097291,0.0059238302,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_E_A,0.2950291891,0.2956408011,-0.000611612,0.0186842954,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_E_B,0.3548128877,0.3186821607,0.036130727,0.0118854817,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_E_C,0.4789077112,0.3360739783,0.1428337329,0.0281550013,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_L_f1,0.0896858621,0.0560059336,0.0336799285,0.0137717114,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_L_f2,0.029124605,0.0235682105,0.0055563945,0.0053735794,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+mps,Y_Q,0.6573146761,0.6982142567,-0.0408995806,0.0107567128,36,1,"{'Y_C': True, 'Y_D': True, 'Y_E_A': True, 'Y_E_B': True, 'Y_E_C': True, 'Y_L_f1': True, 'Y_L_f2': True}",0
+campaign,Y_C,0.2679102738,0.4749791661,-0.2070688923,,,,,0
+campaign,Y_D,0.0420970105,0.0081227998,0.0339742107,,,,,0
+campaign,Y_E_A,0.25939648,0.2455574254,0.0138390547,,,,,0
+campaign,Y_E_B,0.3223264151,0.2748075117,0.0475189035,,,,,0
+campaign,Y_E_C,0.424401404,0.2671113402,0.1572900639,,,,,0
+campaign,Y_L_f1,0.0658061814,0.0199360717,0.0458701097,,,,,0
+campaign,Y_L_f2,0.0251200311,0.0195046687,0.0056153624,,,,,0
+campaign,Y_Q,0.6835394409,0.6966784354,-0.0131389945,,,,,0

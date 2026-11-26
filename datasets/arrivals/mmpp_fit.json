@@ -1,0 +1,84 @@
+{
+ "description": "Two-state Markov-modulated Poisson process (calm, burst) fitted to the arrival times of the public BurstGPT trace; only the fitted parameters are shipped, not the trace.",
+ "trace": {
+  "name": "BurstGPT",
+  "reference": "arXiv 2401.17644",
+  "version": "v2.0",
+  "file": "BurstGPT_1.csv",
+  "sha256_prefix": "4bb37836",
+  "log_type": "API log",
+  "api_arrivals": 1275518,
+  "hours": 1461,
+  "busy_half_median_requests_per_hour": 848
+ },
+ "method": "Hours whose request count lies within a band around the median of the busiest half of the hours are kept (diurnal level changes removed); the Poisson hidden Markov model is fitted by Baum-Welch (EM) to the 10 s counts of each contiguous run of at least 3 kept hours, pooled over runs. Script: fit_burstgpt.py.",
+ "states": [
+  "calm",
+  "burst"
+ ],
+ "primary_fit": {
+  "band": 0.25,
+  "kept_hours": 89,
+  "contiguous_runs": 4,
+  "bins_of_10_s": 4680,
+  "rel_rate": [
+   1.0,
+   11.782623157978083
+  ],
+  "mean_dwell_s": [
+   247.2110176605178,
+   22.793088978192678
+  ],
+  "stationary": [
+   0.915582435904607,
+   0.08441756409539304
+  ],
+  "log_likelihood": -9615.694055927592,
+  "iterations": 26,
+  "count_cv_60s": {
+   "data": 1.172,
+   "fitted_mmpp": 1.104,
+   "poisson": 0.264
+  }
+ },
+ "sensitivity_fit": {
+  "band": 0.5,
+  "kept_hours": 189,
+  "contiguous_runs": 19,
+  "bins_of_10_s": 29880,
+  "rel_rate": [
+   1.0,
+   10.751213365834754
+  ],
+  "mean_dwell_s": [
+   108.32296280107045,
+   103.3335531243954
+  ],
+  "stationary": [
+   0.5117865723501563,
+   0.48821342764984366
+  ],
+  "log_likelihood": -58874.228246910614,
+  "iterations": 25,
+  "count_cv_60s": {
+   "data": 1.018,
+   "fitted_mmpp": 0.77,
+   "poisson": 0.275
+  }
+ },
+ "used_in_testbed": {
+  "rel_rate": [
+   1.0,
+   11.78
+  ],
+  "mean_dwell_s": [
+   247.2,
+   22.8
+  ],
+  "time_scale": 1,
+  "modulation": "shared (one chain per node and device class)",
+  "calibration": "realized",
+  "rate_heterogeneity_cv": 0.5,
+  "note": "The fitted rate ratio and mean dwell times are the primary fit rounded; the base rate of each device class is a workload parameter (see ../workload/workload.json) because the trace rate is that of a whole service."
+ }
+}

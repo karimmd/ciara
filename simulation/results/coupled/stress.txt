@@ -1,0 +1,6 @@
+indep   N=5 q=0.667: miss rate over all looks (nominal 0.05, M_c = 1, arms pooled): NAIVE 0.0272  C1P 0.0008  C1R 0.0173   radius ratio at the last look, arm 0: C1P/NAIVE 1.20, C1R/NAIVE 1.18
+indep   N=5 q=0.167: miss rate over all looks (nominal 0.05, M_c = 1, arms pooled): NAIVE 0.0235  C1P 0.0010  C1R 0.0143   radius ratio at the last look, arm 0: C1P/NAIVE 1.41, C1R/NAIVE 1.10
+half    N=5 q=0.667: miss rate over all looks (nominal 0.05, M_c = 1, arms pooled): NAIVE 0.1000  C1P 0.0018  C1R 0.0145   radius ratio at the last look, arm 0: C1P/NAIVE 1.46, C1R/NAIVE 1.39
+half    N=5 q=0.167: miss rate over all looks (nominal 0.05, M_c = 1, arms pooled): NAIVE 0.0870  C1P 0.0032  C1R 0.0147   radius ratio at the last look, arm 0: C1P/NAIVE 1.48, C1R/NAIVE 1.13
+common  N=5 q=0.667: miss rate over all looks (nominal 0.05, M_c = 1, arms pooled): NAIVE 0.3782  C1P 0.0057  C1R 0.0175   radius ratio at the last look, arm 0: C1P/NAIVE 2.03, C1R/NAIVE 1.87
+common  N=5 q=0.167: miss rate over all looks (nominal 0.05, M_c = 1, arms pooled): NAIVE 0.3337  C1P 0.0055  C1R 0.0147   radius ratio at the last look, arm 0: C1P/NAIVE 1.65, C1R/NAIVE 1.19
